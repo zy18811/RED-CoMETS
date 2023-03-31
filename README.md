@@ -13,15 +13,15 @@ Timing results have only been recorded for Co-eye, R5%, R10%, R15%, and R20%.
 #### Co-eye
 * [Co-eye](Results/Univariate_Foundation/Coeye_TESTFOLDS.csv)
 #### Random Pair Selection
-* [R5%](Results/Univariate_Foundation/R5%25_TESTFOLDS.csv)
-* [R10%](Results/Univariate_Foundation/R10%25_TESTFOLDS.csv)
-* [R15%](Results/Univariate_Foundation/R15%25_TESTFOLDS.csv)
-* [R20%](Results/Univariate_Foundation/R20%25_TESTFOLDS.csv)
+* [R5%](Results/Univariate_Foundation/R5_TESTFOLDS.csv)
+* [R10%](Results/Univariate_Foundation/R10_TESTFOLDS.csv)
+* [R15%](Results/Univariate_Foundation/R15_TESTFOLDS.csv)
+* [R20%](Results/Univariate_Foundation/R20_TESTFOLDS.csv)
 
 #### Voting Methods
-* [Sum Rule Uniform](Results/Univariate_Foundation/R5%25_SR_Uniform_TESTFOLDS.csv)
-* [Sum Rule Mean-Max](Results/Univariate_Foundation/R5%25_SR_Mean-Max_TESTFOLDS.csv)
-* [Sum Rule Validation](Results/Univariate_Foundation/R5%25_SR_Validation_TESTFOLDS.csv)
+* [Sum Rule Uniform](Results/Univariate_Foundation/R5_SR_Uniform_TESTFOLDS.csv)
+* [Sum Rule Mean-Max](Results/Univariate_Foundation/R5_SR_Mean-Max_TESTFOLDS.csv)
+* [Sum Rule Validation](Results/Univariate_Foundation/R5_SR_Validation_TESTFOLDS.csv)
 
 ### RED CoMETS
 * [RED CoMETS-1](Results/RED_CoMETS/RED_CoMETS-1_TESTFOLDS.csv)
