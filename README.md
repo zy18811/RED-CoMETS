@@ -87,17 +87,17 @@ accuracy = univariate_foundation(X_train, y_train, X_test, y_test, p_length, vot
 
 ### RED CoMETS
 
-| Name         | Extension  | Approach | Voting Method 1 | Voting Method 2 |
+| Name         | Approach  | Sub-Approach | Voting Method 1 | Voting Method 2 |
 |--------------|------------|----------|:---------------:|-----------------|
-| RED CoMETS-1 | Glueing    | n/a      |     Uniform     | n/a             |
-| RED CoMETS-2 | Glueing    | n/a      |     Mean-Max    | n/a             |
-| RED CoMETS-3 | Glueing    | n/a      |    Validation   | n/a             |
-| RED CoMETS-4 | Ensembling | 1        |     Uniform     | n/a             |
-| RED CoMETS-5 | Ensembling | 1        |     Mean-Max    | n/a             |
-| RED CoMETS-6 | Ensembling | 2        |     Uniform     | Uniform         |
-| RED CoMETS-7 | Ensembling | 2        |     Uniform     | Mean-Max        |
-| RED CoMETS-8 | Ensembling | 2        |     Mean-Max    | Mean-Max        |
-| RED CoMETS-9 | Ensembling | 2        |     Mean-Max    | Uniform         |
+| RED CoMETS-1 | Concatenating | n/a      |     Uniform     | n/a             |
+| RED CoMETS-2 | Concatenating | n/a      |     Mean-Max    | n/a             |
+| RED CoMETS-3 | Concatenating | n/a      |    Validation   | n/a             |
+| RED CoMETS-4 | Ensembling    | 1        |     Uniform     | n/a             |
+| RED CoMETS-5 | Ensembling    | 1        |     Mean-Max    | n/a             |
+| RED CoMETS-6 | Ensembling    | 2        |     Uniform     | Uniform         |
+| RED CoMETS-7 | Ensembling    | 2        |     Uniform     | Mean-Max        |
+| RED CoMETS-8 | Ensembling    | 2        |     Mean-Max    | Mean-Max        |
+| RED CoMETS-9 | Ensembling    | 2        |     Mean-Max    | Uniform         |
 
 ```python
 from Code.RED_CoMETS.red_comets import red_comets
