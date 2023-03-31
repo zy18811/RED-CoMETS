@@ -112,13 +112,13 @@ accuracy = red_comets(X_train, y_train, X_test, y_test, id_number)
 ```
 
 ## Reproducing the Experiments
-We used [85 univariate](/Results/Univariate_Foundation/uv_datasets.txt) and [26 multivariate](/Results/RED_CoMETS/mv_datasets.txt) datasets from the UCR timeseries classification archive. 
+We used [85 univariate](Results/Univariate_Foundation/uv_datasets.txt) and [26 multivariate](Results/RED_CoMETS/mv_datasets.txt) datasets from the UCR timeseries classification archive. 
 
 ### Co-eye and Univariate Foundation
-[univariate_experiments.py](/Code/Univariate_Foundation/univariate_experiments.py)
+[univariate_experiments.py](Code/Univariate_Foundation/univariate_experiments.py)
 
 ### RED CoMETS
-[multivariate_experiments.py](/Code/RED_CoMETS/multivariate_experiments.py)
+[multivariate_experiments.py](Code/RED_CoMETS/multivariate_experiments.py)
 
 ## Acknowledgements
 We thank all the people who have contributed to and who maintain the UCR time series classification archive. Critical difference diagrams in our paper showing were produced using code from [Ismail Fawaz et al. (2019)](https://github.com/hfawaz/cd-diagram). Our implementation of the SAX transform uses code modified from [saxpy](https://github.com/seninp/saxpy).
