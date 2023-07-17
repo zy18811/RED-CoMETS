@@ -3,7 +3,7 @@
 
 > <div align="justify">Multivariate time series classification is a rapidly growing area of research that has numerous practical applications in diverse fields such as finance, healthcare, and engineering. The problem of classifying multivariate time series data is challenging due to the high dimensionality, temporal dependencies, and varying lengths of the time series.  This paper proposes a novel ensemble classifier called RED CoMETS. The proposed method builds upon the success of Co-eye, an ensemble classifier for symbolically represented univariate time series, and extends it to handle multivariate data. RED CoMETS is evaluated on benchmark datasets from the UCR archive and achieves competitive accuracy with state-of-the-art techniques in multivariate settings and yields the highest accuracy reported in the literature for the 'HandMovementDirection' dataset. The proposed method also offers a significant reduction in computation time compared to classic Co-eye, making it an efficient and effective option for multivariate time series classification.</div>
 
-Submitted to ECML PKDD 2023.
+Accepted by the 8th Workshop on Advanced Analytics and Learning on Temporal Data at ECML PKDD 2023.
 
 ## Results
 Test accuracy is given for all experiments.   
