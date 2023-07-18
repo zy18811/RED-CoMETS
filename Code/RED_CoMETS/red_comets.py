@@ -16,7 +16,7 @@ def red_comets(X_train, y_train, X_test, y_test, id_number, p_length=5, n_trees=
     # Glueing Dimensions
     if id_number in [1,2,3]:
         voting_method = voting_methods_lookup[id_number-1]
-        p_length /= n_dims # number of lensescomputed from the length of the time series prior to glueing
+        p_length /= n_dims # number of lenses computed from the length of the time series prior to glueing
         X_train, X_test = glue_dimensions(X_train, X_test)
         return univariate_foundation(X_train, y_train, X_test, y_test,  p_length, voting_method, n_trees, random_seed, n_jobs)
     
