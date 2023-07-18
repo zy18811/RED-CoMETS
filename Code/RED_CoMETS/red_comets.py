@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.metrics import accuracy_score
 
 from red_comets_functions import glue_dimensions
-from Enhanced_Coeye.coeye import random_coeye, sum_rule_uniform, sum_rule_meanmax
+from Univariate_Foundation.coeye import random_coeye, sum_rule_uniform, sum_rule_meanmax
 
 def red_comets(X_train, y_train, X_test, y_test, id_number, p_length=5, n_trees=100, random_seed=42, n_jobs=1):
     
