@@ -44,7 +44,7 @@ Timing results have only been recorded for Co-eye, R5%, R10%, R15%, and R20%.
 [UCR time series classification archive datasets](https://www.timeseriesclassification.com/dataset.php) in .arff format. 
 
 ```python
-from Code.utilities.utils import DatasetLoader
+from Code.Utilities.utils import DatasetLoader
 
 dataset = '/path/to/dataset/folder'
 
