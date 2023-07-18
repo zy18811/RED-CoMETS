@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.metrics import accuracy_score
 
 from red_comets_functions import glue_dimensions
-from Univariate_Foundation.coeye import random_coeye, sum_rule_uniform, sum_rule_meanmax
+from Univariate_Foundation.univariate_foundation import univariate_foundation, sum_rule_uniform, sum_rule_meanmax
 
 def red_comets(X_train, y_train, X_test, y_test, id_number, p_length=5, n_trees=100, random_seed=42, n_jobs=1):
     
@@ -18,7 +18,7 @@ def red_comets(X_train, y_train, X_test, y_test, id_number, p_length=5, n_trees=
         voting_method = voting_methods_lookup[id_number-1]
         p_length /= n_dims # number of lensescomputed from the length of the time series prior to glueing
         X_train, X_test = glue_dimensions(X_train, X_test)
-        return random_coeye(X_train, y_train, X_test, y_test,  p_length, voting_method, n_trees, random_seed, n_jobs)
+        return univariate_foundation(X_train, y_train, X_test, y_test,  p_length, voting_method, n_trees, random_seed, n_jobs)
     
     # Ensembling Dimensions
     elif id_number in [4,5,6,7,8,9]:       
@@ -39,7 +39,7 @@ def red_comets(X_train, y_train, X_test, y_test, id_number, p_length=5, n_trees=
             X_train_d = X_train[d]
             X_test_d = X_test[d]
             
-            rf_mats, classes, length = random_coeye(X_train_d, y_train, X_test_d, y_test, p_length, None, n_trees, random_seed, n_jobs, return_mats=True)
+            rf_mats, classes, length = univariate_foundation(X_train_d, y_train, X_test_d, y_test, p_length, None, n_trees, random_seed, n_jobs, return_mats=True)
             
             if approach == 1:
                 sfa_mats = rf_mats[:length]
