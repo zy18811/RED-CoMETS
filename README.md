@@ -58,7 +58,7 @@ X_train, y_train, X_test, y_test = DatasetLoader(dataset).load_mv_dataset_to_num
 ### Co-eye
 
 ```python
-from Code.Univariate_Foundations.coeye import coeye
+from Code.Univariate_Foundation.coeye import coeye
 
 [...] # load dataset
 
@@ -73,7 +73,7 @@ accuracy = coeye(X_train, y_train, X_test, y_test)
 ### Univariate Foundation
 
 ```python
-from Code.Univariate_Foundations.univariate_foundation import univariate_foundation
+from Code.Univariate_Foundation.univariate_foundation import univariate_foundation
 
 [...] # load dataset
 
