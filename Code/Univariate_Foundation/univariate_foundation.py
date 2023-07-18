@@ -8,8 +8,8 @@ from pyts.approximation import SymbolicFourierApproximation
 from sklearn.ensemble import  RandomForestClassifier
 from sklearn.metrics import accuracy_score
 
-from Utilities.sax import  sax_transform
 from Univariate_Foundation.univariate_foundation_functions import random_lenses, classic_voting, sum_rule_uniform, sum_rule_meanmax, sum_rule_validation
+from Utilities.sax import  sax_transform
 
 def univariate_foundation(X_train, y_train, X_test, y_test, p_length, voting_method, n_trees=100, random_seed=42, n_jobs=1, return_mats=False):
     n_lens = int(p_length*len(X_train[0]) // 100)
