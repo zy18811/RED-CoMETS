@@ -4,10 +4,10 @@ from imblearn.over_sampling import SMOTE, RandomOverSampler
 from sklearn.metrics import accuracy_score
 from collections import Counter
 from pyts.approximation import SymbolicFourierApproximation
-from Utilities.sax import  sax_transform
 from sklearn.ensemble import  RandomForestClassifier
 
 from Univariate_Foundation.coeye_functions import searchLense_SFA, searchLense_SAX, classic_voting
+from Utilities.sax import  sax_transform
 
 def coeye(X_train, y_train, X_test, y_test, n_trees=100,random_seed=0,n_jobs=1):
     min_neighbours= min(Counter(y_train).items(), key=lambda k: k[1])[1]
