@@ -9,7 +9,7 @@ from sklearn.ensemble import  RandomForestClassifier
 from Univariate_Foundation.coeye_functions import searchLense_SFA, searchLense_SAX, classic_voting
 from Utilities.sax import  sax_transform
 
-def coeye(X_train, y_train, X_test, y_test, n_trees=100,random_seed=0,n_jobs=1):
+def coeye(X_train, y_train, X_test, y_test, n_trees=100, random_seed=0, n_jobs=1):
     min_neighbours= min(Counter(y_train).items(), key=lambda k: k[1])[1]
     max_neighbours= max(Counter(y_train).items(), key=lambda k: k[1])[1]
 
@@ -19,7 +19,7 @@ def coeye(X_train, y_train, X_test, y_test, n_trees=100,random_seed=0,n_jobs=1):
     else:
         if (min_neighbours>5): min_neighbours= 6
         try:
-            SMOTE_Xtrain, SMOTE_ytrain = SMOTE(sampling_strategy="all", k_neighbors= min_neighbours-1, random_state=42).fit_resample(X_train, y_train )
+            SMOTE_Xtrain, SMOTE_ytrain = SMOTE(sampling_strategy="all", k_neighbors= min_neighbours-1, random_state=42).fit_resample(X_train, y_train)
         except ValueError:
             SMOTE_Xtrain, SMOTE_ytrain = RandomOverSampler(sampling_strategy='all',random_state=42).fit_resample(X_train,y_train)
       
