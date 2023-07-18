@@ -1,7 +1,9 @@
 import numpy as np
 from pyts.approximation import SymbolicFourierApproximation
-from Utilities.sax  import  sax_transform
 from sklearn.model_selection import cross_val_score
+
+from Univariate_Foundation.coeye_functions import dynamic_voting
+from Utilities.sax  import  sax_transform
 
 """
 Random Pair Selection
@@ -27,6 +29,8 @@ def random_lenses(n_lenses, X_train, seed):
 """
 Voting
 """
+
+classic_voting = dynamic_voting
 
 def sum_rule_uniform(matrices, labels):
     return [labels[i] for i in np.sum(np.array(matrices), axis = 0).argmax(axis = 1)]
