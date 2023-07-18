@@ -4,9 +4,10 @@ import random
 from collections import Counter
 import numpy as np
 from pyts.approximation import SymbolicFourierApproximation
-from Utilities.sax  import  sax_transform
 from sklearn.model_selection import cross_val_score
 from sklearn.ensemble import  RandomForestClassifier
+
+from Utilities.sax  import  sax_transform
 
 """
 Pair Selection
