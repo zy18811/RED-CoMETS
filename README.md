@@ -36,6 +36,7 @@ Timing results have only been recorded for Co-eye, R5%, R10%, R15%, and R20%.
 * [RED CoMETS-9](Results/RED_CoMETS/RED_CoMETS-9_TESTFOLDS.csv)
 
 ## Code
+An implementation of RED CoMETS is also available on [_aeon_](https://www.aeon-toolkit.org/en/latest/api_reference/auto_generated/aeon.classification.dictionary_based.REDCOMETS.html#aeon.classification.dictionary_based.REDCOMETS).
 ### Requirements
 * Python < 3.11
 * [Python Modules](requirements.txt)
