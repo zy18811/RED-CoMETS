@@ -1,10 +1,22 @@
 # RED-CoMETS
 ***RED CoMETS: an ensemble classifier for symbolically represented multivariate time series***
 
-[arXiv:2307.13679](https://arxiv.org/abs/2307.13679) (preprint)
+[AALTD 2023](https://link.springer.com/chapter/10.1007/978-3-031-49896-1_6) | [arXiv:2307.13679](https://arxiv.org/abs/2307.13679) (preprint)
 > <div align="justify">Multivariate time series classification is a rapidly growing area of research that has numerous practical applications in diverse fields such as finance, healthcare, and engineering. The problem of classifying multivariate time series data is challenging due to the high dimensionality, temporal dependencies, and varying lengths of the time series.  This paper proposes a novel ensemble classifier called RED CoMETS. The proposed method builds upon the success of Co-eye, an ensemble classifier for symbolically represented univariate time series, and extends it to handle multivariate data. RED CoMETS is evaluated on benchmark datasets from the UCR archive and achieves competitive accuracy with state-of-the-art techniques in multivariate settings and yields the highest accuracy reported in the literature for the 'HandMovementDirection' dataset. The proposed method also offers a significant reduction in computation time compared to classic Co-eye, making it an efficient and effective option for multivariate time series classification.</div>
 
-Accepted by the [8th Workshop on Advanced Analytics and Learning on Temporal Data](https://ecml-aaltd.github.io/aaltd2023/) at ECML PKDD 2023.
+Please cite as:
+
+```bibtex
+@inproceedings{10.1007/978-3-031-49896-1_6,
+  author    = {Bennett, Luca A. and Abdallah, Zahraa S.},
+  title     = {RED CoMETS: An Ensemble Classifier for Symbolically Represented Multivariate Time Series},
+  booktitle = {Advanced Analytics and Learning on Temporal Data},
+  publisher = {Springer Nature Switzerland},
+  address   = {Cham},
+  year      = {2023},
+  pages     = {76-91}
+}
+```
 
 ## Results
 Test accuracy is given for all experiments.   
